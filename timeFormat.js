@@ -17,8 +17,9 @@ function timeFormat(input) {
 process.stdin.on('readable', function() {
 	var input = process.stdin.read();
 
-    if (!input) {
-    	return
-    }
-    timeFormat(input);
+	if (!input) {
+		return
+	}
+	
+	timeFormat(input);
 });
